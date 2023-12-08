@@ -1,0 +1,24 @@
+<div class="container">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">Posición</th>
+          <th scope="col">Piloto</th>
+          <th scope="col">Nombre</th>
+          <th scope="col">Nacionalidad</th>
+          <th scope="col">Escudería</th>
+          <th scope="col">Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let clasificacion of clasificaciones; let i = index">
+          <td>{{ clasificacion.posicion }}°</td>
+            <td><img class="mini-image" [src]="clasificacion.pilotoImageUrl" alt=""></td>
+            <td>{{clasificacion.nombre}}</td>
+            <td><img class="image-pais" [src]="clasificacion.nacionalidadImageUrl" alt=""></td>
+            <td>{{clasificacion.escuderia}}</td>
+            <td>{{clasificacion.puntos}}</td>
+        </tr>
+      </tbody>
+    </table>
+</div>

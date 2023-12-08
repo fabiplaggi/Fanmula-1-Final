@@ -1,0 +1,21 @@
+<ul>
+    <li *ngFor="let piloto of pilotos">
+        <a>
+            <img class="piloto-image" src="{{piloto.pilotoImageUrl}}" alt="piloto imagen">
+            <div class="content">
+                <div class="descripcion">
+                    {{piloto.nombre}}
+                </div>
+                <img class="nacionalidad" src="{{piloto.nacionalidadImageUrl}}" alt="nacionalidad imagen">
+                <div class="product-item-footer">
+                    <div class="escuderias">
+                        <span> {{piloto.escuderia}} </span>
+                    </div>
+                    <div>
+                        <img class="numero" src="{{piloto.numeroImageUrl}}" alt="numero imagen">
+                    </div>
+                </div>
+            </div>
+        </a>
+    </li>
+</ul>

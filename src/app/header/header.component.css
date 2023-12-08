@@ -1,0 +1,89 @@
+body {
+    margin: 0px;
+    font-family: "SoDo Sans SemiBold", Helvetica Neue, Helvetica, Arial, sans-serif;
+    color: white;
+}
+.header-container {
+    box-shadow: 0px 4px 5px 0px rgba(255, 0, 0, 0.71);
+    -webkit-box-shadow: 0px 4px 5px 0px rgb(255, 0, 0);
+    -moz-box-shadow: 0px 4px 5px 0px rgba(255, 0, 0, 0.71);
+}
+.header {
+    max-width: 1560px;
+    padding: 0px;
+    font-size: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    background-color: black;
+}
+
+.logo-image {
+    width: 80px;
+    height: auto;
+    margin-right: 10px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+a.logo {
+    font-weight: bold;
+    padding: 1em;
+}
+.navbar-left div a{
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 0;
+    padding: 2em;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+}
+.navbar-left div a:hover{
+    color: #e72929;
+    background-color: white;
+}
+
+.navbar-left,   
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left > *,
+.navbar-right > * {
+    margin: 10px;
+}
+
+.sign-in,
+.join-now {
+    font-weight: 500;
+    border: 1px solid white;
+    border-radius: 40px;
+    padding: 5px 20px 5px 20px;
+}
+
+.sign-in,
+.join-now {
+    background-color: #e72929;
+    color: black;
+}
+
+.sign-in a,
+.join-now a{
+    text-decoration: none;
+    color: black;
+}
+
+.join-now:hover {
+    background-color: whitesmoke;
+}
+
+.sign-in:hover {
+    background-color: whitesmoke;
+}
