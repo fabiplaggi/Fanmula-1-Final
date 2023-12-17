@@ -5,6 +5,8 @@ import { InicioComponent } from './inicio/inicio.component';
 import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { EscuderiasComponent } from './escuderias/escuderias.component';
 import { ClasificacionComponent } from './clasificacion/clasificacion.component';
+import { TablaResultadosComponent } from './tabla-resultados/tabla-resultados.component';
+
 const routes: Routes = [
   {
     path: '', component: InicioComponent
@@ -20,6 +22,9 @@ const routes: Routes = [
   },
   {
     path: 'clasificacion', component: ClasificacionComponent
+  },
+  {
+    path: 'tabla-resultados', component: TablaResultadosComponent
   }
 ];
 

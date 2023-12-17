@@ -1,0 +1,45 @@
+<h1>Resultados Temporada 2023</h1>
+
+<div class="container">
+  <div class="input">
+    <button *ngFor="let carrera of carrerasDisponibles" class="value" (click)="seleccionarCarrera(carrera)">
+      <img [src]="'../../assets/BanderasCarreras/' + carrera + '.png'" alt="Logo" class="pais-carrera">
+      {{ carrera }}
+    </button>
+
+    <input type="hidden" id="carreraSelector" [(ngModel)]="carreraSeleccionada" />
+  </div>
+
+  <div class="table-container" *ngIf="resultadosCarrera.length > 0">
+    <mat-card style="background-color: black; border: 1px solid white;">
+      <mat-card-content class="card-title">Resultados de la carrera {{ carreraSeleccionada }}</mat-card-content>
+      <p class="details">Fecha: {{ fechaCarrera }}</p>
+      <p class="details">Lugar: {{ pistaCarrera }}</p>
+    </mat-card>
+    <table>
+      <thead>
+        <tr>
+          <th>Posición</th>
+          <th>Número</th>
+          <th>Nombre del Piloto</th>
+          <th>Escudería</th>
+          <th>Vueltas</th>
+          <th>Tiempo</th>
+          <th>Puntos</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let resultado of resultadosCarrera">
+          <td>{{ resultado.posicion }}</td>
+          <td>{{ resultado.numero }}</td>
+          <td>{{ resultado.nombrePiloto }}</td>
+          <td>{{ resultado.escuderia }}</td>
+          <td>{{ resultado.vueltas }}</td>
+          <td>{{ resultado.tiempo }}</td>
+          <td>{{ resultado.puntos }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
