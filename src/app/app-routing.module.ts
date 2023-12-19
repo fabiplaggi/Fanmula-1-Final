@@ -6,6 +6,7 @@ import { InicioSesionComponent } from './inicio-sesion/inicio-sesion.component';
 import { EscuderiasComponent } from './escuderias/escuderias.component';
 import { ClasificacionComponent } from './clasificacion/clasificacion.component';
 import { TablaResultadosComponent } from './tabla-resultados/tabla-resultados.component';
+import { HighlightsComponent } from './highlights/highlights.component';
 
 const routes: Routes = [
   {
@@ -25,6 +26,9 @@ const routes: Routes = [
   },
   {
     path: 'tabla-resultados', component: TablaResultadosComponent
+  },
+  {
+    path: 'highlights', component: HighlightsComponent
   }
 ];
 

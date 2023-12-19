@@ -5,6 +5,7 @@ interface CarreraDetalle {
   resultados: Carreras[];
   fecha: string;
   pista: string;
+  nota: string;
 }
 
 @Injectable({
@@ -40,6 +41,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 5 Marzo 2023, 12:00PM',
       pista: 'Circuito Internacional de Baréin, Sakhir',
+      nota: 'Hulkenberg recibió una penalización de 15 segundos por múltiples infracciones del límite de la pista.'
     };
     this.carreras['GP de Arabia Saudita'] = {
       resultados: [
@@ -66,6 +68,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 19 Marzo 2023, 2:00PM',
       pista: 'Circuito Jeddah Corniche, Jeddah',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera.'
     };
     this.carreras['GP de Australia'] = {
       resultados: [
@@ -92,6 +95,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 2 Abril 2023, 2:00AM',
       pista: 'Circuito del Gran Premio de Melbourne, Melbourne',
+      nota: 'Pérez anotó un punto adicional por marcar la vuelta más rápida de la carrera. Sainz recibió una penalización de cinco segundos por provocar una colisión.'
     };
     this.carreras['GP de Azerbaiyán'] = {
       resultados: [
@@ -118,6 +122,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 30 Abril 2023, 8:00AM',
       pista: 'Circuito de la ciudad de Bakú, Bakú',
+      nota: 'Russell anotó un punto adicional por marcar la vuelta más rápida de la carrera.'
     };
     this.carreras['GP de Miami'] = {
       resultados: [
@@ -144,6 +149,8 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 7 Mayo 2023, 4:30PM',
       pista: 'Autódromo Internacional de Miami, Miami',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Sainz recibió una '+
+      'penalización de cinco segundos por exceso de velocidad en el pit lane.'
     };
     this.carreras['GP de Emilia-Romaña'] = {
       resultados: [
@@ -170,6 +177,7 @@ export class CarreraService {
       ],
       fecha: 'Cancelado',
       pista: 'Autódromo Enzo y Dino Ferrari, Imola',
+      nota: 'Carrera cancelada.'
     };
     this.carreras['GP de Mónaco'] = {
       resultados: [
@@ -196,6 +204,10 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 28 Mayo 2023, 10:00AM',
       pista: 'Circuito de Mónaco, Mónaco',
+      nota: 'Hamilton obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Sargeant recibió una '+
+      'penalización de cinco segundos por exceso de velocidad en el pit lane. Russell recibió una penalización de cinco '+
+      'segundos por reincorporarse a la pista de manera insegura. Hulkenberg recibió una penalización de 10 segundos por no '+
+      'cumplir una penalización durante una parada en boxes.'
     };
     this.carreras['GP de España'] = {
       resultados: [
@@ -222,6 +234,8 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 4 Junio 2023, 10:00AM',
       pista: 'Circuito de Barcelona-Catalunya, Barcelona',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Tsunoda recibió una' + 
+      ' penalización de cinco segundos por obligar a otro piloto a salir de la pista.'
     };
     this.carreras['GP de Canadá'] = {
       resultados: [
@@ -248,6 +262,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 18 Junio 2023, 3:00PM',
       pista: 'Circuito Gilles-Villeneuve, Montreal',
+      nota: 'Pérez anotó un punto adicional por marcar la vuelta más rápida de la carrera. Norris recibió una penalización de cinco segundos por comportamiento antideportivo.'
     };
     this.carreras['GP de Austria'] = {
       resultados: [
@@ -274,6 +289,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 2 Julio 2023, 10:00AM',
       pista: 'Red Bull Ring, Spielberg',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. De Vries recibió una penalización de cinco segundos por obligar a otro piloto a salirse de la pista. Sargeant, Magnussen, Ocon (x2), De Vries y Tsunoda recibieron penalizaciones de cinco segundos por exceder los límites de la pista. Tsunoda, Sainz, Hamilton, Gasly, Albon, Ocon (x2) y De Vries recibieron penalizaciones de 10 segundos por exceder los límites de la pista.'
     };
     this.carreras['GP de Gran Bretaña'] = {
       resultados: [
@@ -300,6 +316,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 9 Julio 2023, 11:00AM',
       pista: 'Circuito de Silverstone, Silverstone',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Stroll recibió una penalización de cinco segundos por provocar una colisión.'
     };
     this.carreras['GP de Hungría'] = {
       resultados: [
@@ -326,6 +343,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 23 Julio 2023, 10:00AM',
       pista: 'Hungaroring, Budapest',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Leclerc recibió una penalización de cinco segundos por exceso de velocidad en el pit lane.'
     };
     this.carreras['GP de Bélgica'] = {
       resultados: [
@@ -352,6 +370,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 30 Julio  2023, 10:00AM',
       pista: 'Circuito de Spa-Francorchamps, Spa-Francorchamps',
+      nota: 'Hamilton obtuvo un punto adicional por marcar la vuelta más rápida de la carrera.'
     };
     this.carreras['GP de Países Bajos'] = {
       resultados: [
@@ -378,6 +397,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 27 Agosto 2023, 10:00AM',
       pista: 'Circuito Zandvoort, Zandvoort',
+      nota: 'Alonso anotó un punto adicional por marcar la vuelta más rápida de la carrera. Tsunoda recibió una penalización de cinco segundos por provocar una colisión. Pérez recibió una penalización de cinco segundos por exceso de velocidad en el pit lane. Magnussen recibió una penalización de cinco segundos por quedar más de 10 coches detrás del coche de seguridad.'
     };
     this.carreras['GP de Italia'] = {
       resultados: [
@@ -404,6 +424,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 3 Septiembre 2023, 10:00AM',
       pista: 'Autódromo Nacional de Monza, Monza',
+      nota: 'Russell y Piastri recibieron penalizaciones de cinco segundos por abandonar la pista y obtener una ventaja. Hamilton y Sargeant recibieron penalizaciones de cinco segundos por provocar una colisión.'
     };
     this.carreras['GP de Singapur'] = {
       resultados: [
@@ -429,6 +450,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 17 Septiembre 2023, 9:00AM',
       pista: 'Circuito callejero de Marina Bay, Marina Bay',
+      nota: 'Hamilton obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Pérez recibió una penalización de cinco segundos por provocar una colisión.'
     };
     this.carreras['GP de Japón'] = {
       resultados: [
@@ -455,6 +477,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 24 Septiembre 2023, 2:00AM',
       pista: 'Circuito de carreras internacional de Suzuka, Suzuka',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera.'
     };
     this.carreras['GP de Qatar'] = {
       resultados: [
@@ -481,6 +504,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 8 Octubre 2023, 2:00PM',
       pista: 'Circuito Internacional de Lusail, Lusail',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Pérez y Gasly recibieron tres penalizaciones de cinco segundos por infracciones de los límites de la pista. Stroll y Albon recibieron cada uno dos penalizaciones de cinco segundos por infracciones de los límites de la pista.'
     };
     this.carreras['GP de Estados Unidos'] = {
       resultados: [
@@ -507,6 +531,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 22 Octubre 2023, 4:00PM',
       pista: 'Circuito de las Américas, Austin',
+      nota: 'Tsunoda obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Albon recibió una penalización de cinco segundos por infringir los límites de la pista. Hamilton y Leclerc descalificados por infracciones técnicas.'
     };
     this.carreras['GP de México'] = {
       resultados: [
@@ -531,8 +556,9 @@ export class CarreraService {
         { posicion: 19, numero: 20, nombrePiloto: 'Kevin Magnussen', escuderia: 'Haas', vueltas: 31, tiempo: 'Abandono', puntos: 0 },
         { posicion: 20, numero: 11, nombrePiloto: 'Sergio Pérez', escuderia: 'Red Bull', vueltas: 1, tiempo: 'Abandono', puntos: 0 },
       ],
-      fecha: 'Domingo, 29 Octubre, 5:00PM',
+      fecha: 'Domingo, 29 Octubre 2023, 5:00PM',
       pista: 'Autódromo Hermanos Rodríguez, Ciudad de México',
+      nota: 'Hamilton obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Bottas recibió una penalización de cinco segundos por provocar una colisión.'
     };
     this.carreras['GP de Brasil'] = {
       resultados: [
@@ -559,6 +585,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 5 Noviembre 2023, 2:00PM',
       pista: 'Autódromo José Carlos Pace, São Paulo',
+      nota: 'Norris obtuvo un punto adicional por marcar la vuelta más rápida de la carrera.'
     };
     this.carreras['GP de Las Vegas'] = {
       resultados: [
@@ -585,6 +612,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 19 Noviembre 2023, 3:00AM',
       pista: 'Circuito del Strip de Las Vegas, Las Vegas',
+      nota: 'Piastri obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Russell recibió una penalización de cinco segundos por provocar una colisión.'
     };
     this.carreras['GP de Abu Dhabi'] = {
       resultados: [
@@ -611,6 +639,7 @@ export class CarreraService {
       ],
       fecha: 'Domingo, 26 Noviembre 2023, 10:00AM',
       pista: 'Circuito Yas Marina, Isla Yas',
+      nota: 'Verstappen obtuvo un punto adicional por marcar la vuelta más rápida de la carrera. Pérez recibió una penalización de cinco segundos por provocar una colisión.'
     };
   }
 
@@ -628,5 +657,9 @@ export class CarreraService {
 
   getPistaCarrera(carrera: string): string {
     return this.carreras[carrera]?.pista || '';
+  }
+
+  getNotaCarrera(carrera: string): string {
+    return this.carreras[carrera]?.nota || '';
   }
 }

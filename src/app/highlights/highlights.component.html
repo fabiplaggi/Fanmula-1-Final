@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="conten">
+        <h1><i class="fa-brands fa-youtube"></i>Fórmula 1 Temporada 2023</h1>
+        <p>En esta página encontrarás los mejores momentos de todas las carreras de la temporada.</p>
+        <a class="btn-canal" target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@Formula1">Canal de Youtube</a>
+    </div>
+
+    <div class="grupo">
+        <h1 class="title">Highlights Temporada 2023</h1>
+        <div class="contvideos">
+            <div class="card-container">
+                <div class="card" *ngFor="let highlight of highlights">
+                    <img src={{highlight.videoImgUrl}}>
+                    <div class="card-content">
+                        <h3>{{highlight.nombreCarrera}}</h3>
+                        <p><span class="calendar-character">📆</span>{{highlight.fechaCarrera}}</p>
+                        <a href={{highlight.linkVideo}} target="_blank" rel="noopener noreferrer" class="btn">Ver vídeo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -12,6 +12,7 @@ import { TablaResultadosComponent } from './tabla-resultados/tabla-resultados.co
 import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatCardModule} from '@angular/material/card';
+import { HighlightsComponent } from './highlights/highlights.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     InicioSesionComponent,
     EscuderiasComponent,
     ClasificacionComponent,
-    TablaResultadosComponent
+    TablaResultadosComponent,
+    HighlightsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,7 +1,18 @@
-/* resultados-carrera.component.css */
-h1 {
+.titulo {
+  background-color: #0D1117;
+  border: 1px solid white;
+  margin-left: 25px;
+  margin-right: 25px;
+  margin-top: 15px;
+}
+
+h1{
   color: white;
   text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-family: Impact, sans-serif;
 }
 
 .container {
@@ -17,7 +28,9 @@ h1 {
   justify-content: center;
   border-radius: 5px;
   margin-bottom: 15px;
+  border: 1px solid white;
 }
+
 .value {
   background-color: transparent;
   border: none;
@@ -63,13 +76,35 @@ h1 {
 }
 
 .table-container {
-  flex: 1; /* Hace que la tabla ocupe el espacio restante */
-  margin-left: 20px; /* Ajusta el margen izquierdo de la tabla según sea necesario */
+  flex: 1;
+  margin-left: 20px;
 }
 
-h2 {
+.card-info-carrera {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.card-title {
   color: white;
   text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-family: Verdana, sans-serif;
+}
+
+.details {
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+  margin: 5px 0;
+  font-family: Verdana, sans-serif;
+  align-items: center;
+}
+
+.special-character {
+  font-size: 1em;
+  margin-right: 5px;
 }
 
 table {
@@ -95,18 +130,4 @@ td {
 tr {
   color: white;
   background-color: #0D1117;
-}
-
-.card-title {
-  color: rgb(33, 25, 141);
-  text-align: center;
-  font-size: 1.5rem; /* Ajusta el tamaño de la fuente según tus preferencias */
-  margin-bottom: 10px; /* Ajusta la distancia entre el título y los detalles */
-}
-
-.details {
-  text-align: center;
-  color: white;
-  font-size: 0.9rem; /* Ajusta el tamaño de la fuente según tus preferencias */
-  margin: 5px 0; /* Ajusta la distancia entre los elementos <p> */
 }
